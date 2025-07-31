@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brasil-utils-samuellcs"
+version = "0.0.1"
+description = "Utilitários Python para desenvolvedores brasileiros"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Samuel Lucas", email = "samuellcs@example.com"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Utilities"
+]
+keywords = ["brasil", "cpf", "cnpj", "cep", "formatacao", "feriados", "utilities"]
+requires-python = ">=3.8"
+dependencies = [
+    "requests>=2.25.0",
+    "python-dateutil>=2.8.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/samuellcs/simple-package-template"
+Repository = "https://github.com/samuellcs/simple-package-template"
+Issues = "https://github.com/samuellcs/simple-package-template/issues"
+
+[tool.setuptools.packages.find]
+include = ["brasil_utils*"]
+exclude = ["tests*"]
